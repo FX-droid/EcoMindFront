@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMind | Reyting</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>EcoMind</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Bosh sahifa</a></li>
+                <li><a href="mahalla.html">Mahallalar</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Mahallalar reytingi (foiz bo‘yicha)</h2>
+        <table id="rating-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Mahalla</th>
+                    <th>Ishlatilgan (%)</th>
+                    <th>Tankdagi suv (L)</th>
+                </tr>
+            </thead>
+            <tbody id="rating-body"></tbody>
+        </table>
+        <div class="images">
+            <img src="./3033.jpg" alt="">
+            <img src="./Zw5PUQ08f4oonnMmgEc8EHYEE7NEB0jHwwWmzlkm.webp" alt="">
+            <img src="./d458d3ce8d9bcfd01f076ef7b283.webp" alt="">
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Smart Mahalla</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://lizgooo.app.n8n.cloud/webhook/48c356be-58a4-43ef-9da1-44c9afebd58a/chat'
+        });
+    </script>
+</body>
+
+</html>
