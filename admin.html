@@ -53,7 +53,32 @@
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
         createChat({
-            webhookUrl: 'https://lizgooo.app.n8n.cloud/webhook/48c356be-58a4-43ef-9da1-44c9afebd58a/chat'
+            webhookUrl: 'https://lizgooo.app.n8n.cloud/webhook/48c356be-58a4-43ef-9da1-44c9afebd58a/chat',
+            webhookConfig: {
+                method: 'POST',
+                headers: {}
+            },
+            target: '#n8n-chat',
+            mode: 'window',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            loadPreviousSession: true,
+            metadata: {},
+            showWelcomeScreen: false,
+            defaultLanguage: 'en',
+            initialMessages: [
+                'Mening ismim Ali. Qanday yordam berishim mumkin?'
+            ],
+            i18n: {
+                en: {
+                    title: 'Assalomu Alaykum👋',
+                    subtitle: "Chatni boshlang. Biz 24/7 yordamga tayyormiz",
+                    footer: '',
+                    getStarted: 'New Conversation',
+                    inputPlaceholder: "So'rovni shu yerga kiriting...",
+                },
+            },
+            enableStreaming: false,
         });
     </script>
 </body>
